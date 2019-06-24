@@ -1,0 +1,13 @@
+/*HSPバージョン*/
+print "あなたは何歳？"
+old=0
+input old
+button goto "パス度判定",*sindan
+stop
+*sindan
+	if(old<13){
+		print "二次性徴までにブロッカーしないとノンパス"
+	}else{
+		print "手遅れ。ノンパス"
+	}
+	stop
